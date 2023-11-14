@@ -4,6 +4,7 @@ function Profile() {
     return (
         <div>
             <img src={Data.profile.coverPicture} />
+            <img src={Data.profile.profilePicture} />
         </div>
     );
 }

@@ -1,8 +1,8 @@
 {
   "profile": {
     "name": "Anuj Gosalia",
-    "coverPicture": "../assets/images/cover-picture.png",
-    "profilePicture": "../assets/images/profile-picture.png",
+    "coverPicture": "./src/assets/images/cover-picture.png",
+    "profilePicture": "./src/assets/images/profile-picture.png",
     "follower": "6482",
     "following": "245",
     "post": "134"
