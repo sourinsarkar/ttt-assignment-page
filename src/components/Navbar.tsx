@@ -3,7 +3,7 @@ import Logo from "../assets/images/ttt-logo.png";
 function Navbar() {
   return (
     <div className="bg-[#111111]">
-      <div className="flex justify-between items-center mx-10 p-3">
+      <div className="flex justify-between items-center mx-5 p-3">
 
       <div>
         <ul className="flex items-center">
