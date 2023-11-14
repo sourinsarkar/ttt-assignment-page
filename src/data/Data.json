@@ -1,6 +1,8 @@
 {
   "profile": {
     "name": "Anuj Gosalia",
+    "coverPicture": "../assets/images/cover-picture.png",
+    "profilePicture": "../assets/images/profile-picture.png",
     "follower": "6482",
     "following": "245",
     "post": "134"
@@ -19,7 +21,7 @@
     {
       "headline": "A Changing World Order",
       "content": ["The world is changing at a feverish pace. Friends, colleagues and everyone engaged in knowledge work are beginning to sense this, including..."],
-      "content-type": "musing",
+      "category": "musing",
       "name": "anujgosalia",
       "meta-data": {
         "date": "August 2",
