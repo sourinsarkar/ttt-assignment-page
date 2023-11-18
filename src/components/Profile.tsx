@@ -1,7 +1,7 @@
 import Data from "../data/Data.json"
-import Stats from "./Stats";
+// import Stats from "./Stats";
 
-const statIcons = ["Star", "ThumbsUp", "Eye", "Heart"]
+// const statIcons = ["Star", "ThumbsUp", "Eye", "Heart"]
 
 function Profile() {
     return (
@@ -40,10 +40,12 @@ function Profile() {
                     </div>
 
                     <div>
-                        <Stats statIcons={statIcons[0]} />
+                        {/* <Stats statIcons={statIcons[0]} />
                         <Stats statIcons={statIcons[1]} />
                         <Stats statIcons={statIcons[2]} />
-                        <Stats statIcons={statIcons[3]} />
+                        <Stats statIcons={statIcons[3]} /> */}
+
+
                     </div>
                 </div>
             </div>

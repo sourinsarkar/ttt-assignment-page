@@ -1,14 +1,14 @@
-// import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar";
 // import Profile from "../components/Profile";
 
-import Stats from "../components/Stats";
+// import Stats from "../components/Stats";
 
 function Wrapper() {
     return (
         <div>
-            {/* <Navbar /> */}
+            <Navbar />
             {/* <Profile /> */}
-            <Stats />
+            {/* <Stats /> */}
         </div>
     );
 }

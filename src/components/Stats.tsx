@@ -4,12 +4,12 @@ type StatsProp = {
     statIcons: string;
 }
 
-const Stats: React.FC<StatsProp> = ({ statIcon }) => {
+const Stats: React.FC<StatsProp> = ({ statIcons }) => {
     return (
         <div>
             <div>
                 <div>
-                    d  
+                    <statIcons />
                 </div>
                 <div></div>
             </div>
