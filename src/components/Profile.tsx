@@ -1,7 +1,5 @@
 import Data from "../data/Data.json"
-// import Stats from "./Stats";
 
-// const statIcons = ["Star", "ThumbsUp", "Eye", "Heart"]
 
 function Profile() {
     return (
