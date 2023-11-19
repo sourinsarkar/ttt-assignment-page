@@ -9,7 +9,7 @@ const Profile: React.FC = () => {
                     <img src={Data.profile.coverPicture} alt="Cover Picture" className='w-full h-full object-cover' />
                 </div>
 
-                <div className='flex items-baseline justify-between mt-[-5%]'>
+                <div className='flex items-end justify-between mt-[-5%]'>
                     <div className='w-full flex justify-center'>
                         <div className='bg-green-400 h-40 rounded-full border-2 border-[#111111]'>
                             <img src={Data.profile.profilePicture} alt="Profile Picture" className='w-full h-full rounded-inherit'/>
@@ -17,15 +17,17 @@ const Profile: React.FC = () => {
                     </div>
                     <div className='w-full'>
                         <div>
-                            <ul>
+                            <ul className='flex items-center'>
                                 <li>
-                                    Anuj Gosalia
+                                    <h1 className=''>{Data.profile.name}</h1>
                                 </li>
                                 <li><Triangle /> </li>
                                 <li><Check /> </li>
                             </ul>
                         </div>
-                        <div></div>
+                        <div>
+
+                        </div>
                     </div>
                 </div>
 
