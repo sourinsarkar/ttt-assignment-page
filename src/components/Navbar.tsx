@@ -2,8 +2,8 @@ import Logo from '../assets/images/ttt-logo.png'
 
 const Navbar: React.FC = () => {
   return (
-    <div className='bg-[#111111]'>
-      <div>
+    <div>
+      <div className='bg-[#111111] px-10 py-5'>
         <div className='flex items-center text-white justify-between'>
           <div>
             <div className='flex items-center'>
