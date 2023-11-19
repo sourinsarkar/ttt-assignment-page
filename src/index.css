@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-font: 'Inter-Variable';
+}
+
+@font-face {
+    font-family: 'Inter-Variable';
+    src: url('./assets/fonts/Inter/Inter-Variable.woff2') format('woff2'),
+        url('./assets/fonts/Inter/Inter-Variable.woff') format('woff'),
+        url('./assets/fonts/Inter/Inter-Variable.ttf') format('truetype');
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+    font-family: var(--primary-font);
+}
 
 .rounded-inherit {
     border-radius: inherit;

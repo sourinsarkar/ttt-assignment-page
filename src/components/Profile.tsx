@@ -1,5 +1,6 @@
 import Data from '../data/Data.json'
 import { Triangle, Check } from 'iconoir-react'
+import Stats from './Stats';
 
 const Profile: React.FC = () => {
     return(
@@ -15,18 +16,27 @@ const Profile: React.FC = () => {
                             <img src={Data.profile.profilePicture} alt="Profile Picture" className='w-full h-full rounded-inherit'/>
                         </div>
                     </div>
-                    <div className='w-full'>
+                    <div className='w-full flex items-start'>
                         <div>
-                            <ul className='flex items-center'>
-                                <li>
-                                    <h1 className=''>{Data.profile.name}</h1>
-                                </li>
-                                <li><Triangle /> </li>
-                                <li><Check /> </li>
-                            </ul>
-                        </div>
-                        <div>
+                            <div>
+                                <ul className='flex items-center'>
+                                    <li>
+                                        <h1 className='font-bold text-2xl'>{Data.profile.name}</h1>
+                                    </li>
+                                    <li><Triangle /> </li>
+                                    <li><Check /> </li>
+                                </ul>
+                            </div>
 
+                            <div className='flex justify-between bg-slate-200'>
+                                <div className='w-full flex'>
+                                    <Stats value={Data.profile.follower} />
+                                </div>
+                                
+                                <div className='w-full flex'>
+                                    <Stats value={Data.profile.following} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

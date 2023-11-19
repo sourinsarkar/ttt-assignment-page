@@ -6,7 +6,7 @@ function Wrapper() {
     <div className="max-w-screen-xl m-auto">
       <Navbar />
       <div className="max-w-screen-md m-auto">
-        <Profile />
+        <Profile /> 
       </div>
     </div>
   );
