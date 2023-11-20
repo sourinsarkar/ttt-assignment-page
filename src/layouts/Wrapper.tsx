@@ -1,5 +1,5 @@
-import Navbar from "../components/NavSec/Navbar";
-import Profile from "../components/ProfileSec/Profile";
+import Navbar from "../components/NavSection/Navbar";
+import Profile from "../components/ProfileSection/Profile";
 
 function Wrapper() {
   return (
@@ -8,6 +8,7 @@ function Wrapper() {
       <div className="max-w-screen-md m-auto">
         <Profile />
       </div>
+      
     </div>
   );
 }
