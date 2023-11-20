@@ -37,7 +37,7 @@ const Profile: React.FC = () => {
         <div>
           <div className="flex items-end mt-[-5%] mb-8 gap-10">
             <div className="flex justify-center">
-              <div className=" h-40 rounded-full border-2 border-[#111111]">
+              <div className=" h-40 rounded-full border-2 border-[#111111]/50">
                 <img src={Data.profile.profilePicture} alt="Profile Picture" className="w-full h-full rounded-inherit"
                 />
               </div>

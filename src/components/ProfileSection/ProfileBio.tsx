@@ -1,5 +1,4 @@
 import importedData from "../../data/Data.json";
-import Divider from "../DividerSec/Divider";
 import ProfileBioIcons from "./ProfileBioIcons";
 
 type ProfileBioType = {
@@ -42,7 +41,6 @@ const ProfileBio: React.FC = () => {
                 <ProfileBioIcons iconName="Eye" value={Data.bio.view} color="bg-[#848484]"/>
                 <ProfileBioIcons iconName="Heart" value={Data.bio.favourite} color="bg-[#c22659]"/>
             </div>
-            <Divider />
         </div>
     );
 }

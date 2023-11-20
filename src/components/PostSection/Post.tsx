@@ -18,7 +18,7 @@ const Post: React.FC<Props> = ({
   postViews,
 }) => {
   return (
-    <div className="pt-10 pb-5">
+    <div className="pt-12 pb-10 border-b-2 border-black/5">
       <div className="flex justify-between items-center">
         <div className="text-2xl font-extrabold">
           {postHeadline}

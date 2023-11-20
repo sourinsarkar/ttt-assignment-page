@@ -2,6 +2,7 @@ import Navbar from "../components/NavSection/Navbar";
 import Profile from "../components/ProfileSection/Profile";
 import ProfileCover from "../components/ProfileSection/ProfileCover";
 import PostShowcase from "../components/PostSection/PostShowcase";
+import Divider from "../components/DividerSec/Divider";
 
 function Wrapper() {
   return (
@@ -11,8 +12,12 @@ function Wrapper() {
         <ProfileCover />
         <div className="mx-10">
           <Profile />
+        </div>
+        <Divider />
+        <div className="mx-10">
           <PostShowcase />
         </div>
+
       </div>
     </div>
   );
