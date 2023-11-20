@@ -12,8 +12,8 @@ const iconComponents: { [name in IconName]: React.ComponentType} = {
 
 interface Props {
     iconName: IconName;
-    value: string;
-    color: string;
+    value?: string;
+    color?: string;
 };
 
 const ProfileBioIcons: React.FC<Props> = ({ iconName, value, color }) => {
