@@ -17,9 +17,11 @@ const Data = {
 const ProfileBio: React.FC = () => {
     return (
         <div>
-            <div><h2>{Data.bio.about}</h2></div>
-            <div><a href={Data.bio.link}>{Data.bio.link}</a></div>
-            <div className="flex gap-5">
+            <div className="text-xl text-medium py-1"><h2>{Data.bio.about}</h2></div>
+            <div className="text-[#5cb8c3]"><a href={Data.bio.link}>{Data.bio.link}</a></div>
+            <div className="flex gap-5 py-3">
+
+                {/* Worst way ----- */}
                 {/* <div className="bg-[#5cb8c3]">
                     <ProfileBioIcons iconName="Star" value={Data.bio.star}/>
                     </div>
@@ -33,6 +35,7 @@ const ProfileBio: React.FC = () => {
                     <ProfileBioIcons iconName="Heart" value={Data.bio.favourite}/>
                 </div> */}
 
+                {/* Best way ----- */}
                 <ProfileBioIcons iconName="Star" value={Data.bio.star} color="bg-[#5cb8c3]"/>
                 <ProfileBioIcons iconName="ThumbsUp" value={Data.bio.like} color="bg-[#fec03f]"/>
                 <ProfileBioIcons iconName="Eye" value={Data.bio.view} color="bg-[#848484]"/>
