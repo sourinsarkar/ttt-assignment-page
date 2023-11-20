@@ -11,13 +11,13 @@ const Navbar: React.FC = () => {
                 <img src={Logo} alt="Logo" className='h-10'/>
               </div>
               <div className='pl-3'>
-                <h1>STORIES</h1>
+                <h1 className='font-medium tracking-[0.2em]'>STORIES</h1>
               </div>
             </div>
           </div>
           <div>
             <div>
-              <button className='px-3 py-2 bg-[#fec03f] text-black rounded-lg'>Courses</button>
+              <button className='px-3 py-2 bg-[#fec03f] text-black rounded-lg font-semibold tracking-tight'>Courses</button>
             </div>
           </div>
         </div>

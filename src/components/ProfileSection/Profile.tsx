@@ -1,7 +1,8 @@
 import importedData from "../../data/Data.json";
-import { Triangle, Check } from "iconoir-react";
 import Stats from "./Stats";
 import ProfileBio from "./ProfileBio";
+import { Triangle, Check } from "iconoir-react/regular";
+import StatusIconProp from "./StatusIconProp";
 
 type ProfileType = {
   name: string;
@@ -44,17 +45,19 @@ const Profile: React.FC = () => {
             <div className="flex items-start">
               <div>
                 <div className="mb-3">
-                  <ul className="flex items-center">
-                    <li>
+                  <div className="flex items-center gap-2">
+                    <div>
                       <h1 className="font-bold text-2xl">{Data.profile.name}</h1>
-                    </li>
-                    <li>
-                      <Triangle />
-                    </li>
-                    <li>
-                      <Check />
-                    </li>
-                  </ul>
+                    </div>
+                    <div className="p-1 rounded-full bg-[#402773]">
+                        <Triangle height={13} width={13} color='#ffffff' strokeWidth={4}/>
+                    </div>
+                    <div className="p-1 rounded-full bg-[#5fe0a0]">
+                      <StatusIconProp>
+                        <Check />
+                      </StatusIconProp>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="flex justify-between gap-4">
