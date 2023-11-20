@@ -33,12 +33,7 @@ const Profile: React.FC = () => {
   return (
     <div> 
       <div>
-        <div className="h-80">
-          <img src={Data.profile.coverPicture} alt="Cover Picture" className="w-full h-full object-cover"
-          />
-        </div>
-
-        <div className="mx-10">
+        <div>
           <div className="flex items-end mt-[-5%] mb-8 gap-10">
             <div className="flex justify-center">
               <div className=" h-40 rounded-full border-2 border-[#111111]">

@@ -23,7 +23,7 @@
       "content": ["The world is changing at a feverish pace. Friends, colleagues and everyone engaged in knowledge work are beginning to sense this, including..."],
       "category": "musing",
       "name": "anujgosalia",
-      "meta-data": {
+      "metaData": {
         "date": "August 2",
         "duration": "2",
         "views": "102"
@@ -38,7 +38,7 @@
       ],
       "content-type": "thought",
       "name": "anujgosalia",
-      "meta-data": {
+      "metaData": {
         "date": "January 21",
         "duration": "1",
         "views": "156"
@@ -53,7 +53,7 @@
       ],
       "content-type": "thought",
       "name": "anujgosalia",
-      "meta-data": {
+      "metaData": {
         "date": "November 18",
         "duration": "1",
         "views": "228"
