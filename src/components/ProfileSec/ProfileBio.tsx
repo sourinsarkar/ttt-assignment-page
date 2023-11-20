@@ -4,17 +4,15 @@ import ProfileBioIcons from "./ProfileBioIcons";
 type ProfileBioType = {
     about: string;
     link: string;
-    stars: string;
-    likes: string;
-    views: string;
-    favourites: string;
+    star: string;
+    like: string;
+    view: string;
+    favourite: string;
 };
 
 const Data = {
     bio: importedData.bio as ProfileBioType,
 };
-
-const 
 
 const ProfileBio: React.FC = () => {
     return (
@@ -22,7 +20,10 @@ const ProfileBio: React.FC = () => {
             <div><h2>{Data.bio.about}</h2></div>
             <div><a href={Data.bio.link}>{Data.bio.link}</a></div>
             <div>
-                <ProfileBioIcons />
+                <ProfileBioIcons iconName="Star" value={Data.bio.star}/>
+                <ProfileBioIcons iconName="ThumbsUp" value={Data.bio.like}/>
+                <ProfileBioIcons iconName="Eye" value={Data.bio.view}/>
+                <ProfileBioIcons iconName="Heart" value={Data.bio.favourite}/>
             </div>
         </div>
     );
