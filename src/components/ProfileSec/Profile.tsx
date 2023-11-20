@@ -1,6 +1,7 @@
 import importedData from "../../data/Data.json";
 import { Triangle, Check } from "iconoir-react";
 import Stats from "./Stats";
+import ProfileBio from "./ProfileBio";
 
 type ProfileType = {
   name: string;
@@ -37,39 +38,45 @@ const Profile: React.FC = () => {
           />
         </div>
 
-        <div className="flex items-end mt-[-5%]">
-          <div className="flex justify-center">
-            <div className=" h-40 rounded-full border-2 border-[#111111]">
-              <img src={Data.profile.profilePicture} alt="Profile Picture" className="w-full h-full rounded-inherit"
-              />
+        <div className="mx-10">
+          <div className="flex items-end mt-[-5%] mb-8 gap-10">
+            <div className="flex justify-center">
+              <div className=" h-40 rounded-full border-2 border-[#111111]">
+                <img src={Data.profile.profilePicture} alt="Profile Picture" className="w-full h-full rounded-inherit"
+                />
+              </div>
+            </div>
+            <div className="flex items-start">
+              <div>
+                <div className="mb-3">
+                  <ul className="flex items-center">
+                    <li>
+                      <h1 className="font-bold text-2xl">{Data.profile.name}</h1>
+                    </li>
+                    <li>
+                      <Triangle />
+                    </li>
+                    <li>
+                      <Check />
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex justify-between gap-4">
+                  <div className="w-full flex">
+                    <Stats value={Data.profile.follower} statTopic={camelCaseFollowerKey} />
+                  </div>
+
+                  <div className="w-full flex">
+                    <Stats value={Data.profile.following} statTopic={camelCaseFollowingKey} />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex items-start">
-            <div>
-              <div className="mb-3">
-                <ul className="flex items-center">
-                  <li>
-                    <h1 className="font-bold text-2xl">{Data.profile.name}</h1>
-                  </li>
-                  <li>
-                    <Triangle />
-                  </li>
-                  <li>
-                    <Check />
-                  </li>
-                </ul>
-              </div>
 
-              <div className="flex justify-between gap-4">
-                <div className="w-full flex">
-                  <Stats value={Data.profile.follower} statTopic={camelCaseFollowerKey} />
-                </div>
-
-                <div className="w-full flex">
-                  <Stats value={Data.profile.following} statTopic={camelCaseFollowingKey} />
-                </div>
-              </div>
-            </div>
+          <div>
+            <ProfileBio />
           </div>
         </div>
       </div>
