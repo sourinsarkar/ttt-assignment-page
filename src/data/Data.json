@@ -47,7 +47,7 @@
       "headline": "Write to Build",
       "content": [
         "Writing is the first step to create:",
-        ["stories", "products", "companies"]
+        ["- stories", "- products", "- companies"]
       ],
       "content-type": "thought",
       "metaData": {
