@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Profile from "../components/Profile";
+import Navbar from "../components/NavSec/Navbar";
+import Profile from "../components/ProfileSec/Profile";
 
 function Wrapper() {
   return (

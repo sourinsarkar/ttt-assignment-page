@@ -1,4 +1,4 @@
-import Logo from '../assets/images/ttt-logo.png'
+import Logo from '../../assets/images/ttt-logo.png'
 
 const Navbar: React.FC = () => {
   return (
