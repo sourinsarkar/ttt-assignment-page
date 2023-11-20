@@ -19,11 +19,24 @@ const ProfileBio: React.FC = () => {
         <div>
             <div><h2>{Data.bio.about}</h2></div>
             <div><a href={Data.bio.link}>{Data.bio.link}</a></div>
-            <div>
-                <ProfileBioIcons iconName="Star" value={Data.bio.star}/>
-                <ProfileBioIcons iconName="ThumbsUp" value={Data.bio.like}/>
-                <ProfileBioIcons iconName="Eye" value={Data.bio.view}/>
-                <ProfileBioIcons iconName="Heart" value={Data.bio.favourite}/>
+            <div className="flex gap-5">
+                {/* <div className="bg-[#5cb8c3]">
+                    <ProfileBioIcons iconName="Star" value={Data.bio.star}/>
+                    </div>
+                    <div className="bg-[#fec03f]">
+                    <ProfileBioIcons iconName="ThumbsUp" value={Data.bio.like}/>
+                    </div>
+                    <div className="bg-[#848484]">
+                    <ProfileBioIcons iconName="Eye" value={Data.bio.view}/>
+                    </div>
+                    <div className="bg-[#c22659]">
+                    <ProfileBioIcons iconName="Heart" value={Data.bio.favourite}/>
+                </div> */}
+
+                <ProfileBioIcons iconName="Star" value={Data.bio.star} color="bg-[#5cb8c3]"/>
+                <ProfileBioIcons iconName="ThumbsUp" value={Data.bio.like} color="bg-[#fec03f]"/>
+                <ProfileBioIcons iconName="Eye" value={Data.bio.view} color="bg-[#848484]"/>
+                <ProfileBioIcons iconName="Heart" value={Data.bio.favourite} color="bg-[#c22659]"/>
             </div>
         </div>
     );
