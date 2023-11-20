@@ -1,7 +1,7 @@
 import Navbar from "../components/NavSection/Navbar";
 import Profile from "../components/ProfileSection/Profile";
-import Post from "../components/PostSection/Post";
 import ProfileCover from "../components/ProfileSection/ProfileCover";
+import PostShowcase from "../components/PostSection/PostShowcase";
 
 function Wrapper() {
   return (
@@ -11,7 +11,7 @@ function Wrapper() {
         <ProfileCover />
         <div className="mx-10">
           <Profile />
-          <Post />
+          <PostShowcase />
         </div>
       </div>
     </div>

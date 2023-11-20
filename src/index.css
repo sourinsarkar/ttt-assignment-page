@@ -22,3 +22,7 @@ body {
 .rounded-inherit {
     border-radius: inherit;
 }
+
+.post-meta-data > * {
+    margin: 0 0.2em;
+}
