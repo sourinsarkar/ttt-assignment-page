@@ -1,10 +1,10 @@
-import Data from '../../data/Data.json'
+import CoverPicture from "../../assets/images/cover-picture.png"
 
 const ProfileCover: React.FC = () => {
   return (
     <div>
       <div className="xl:h-80">
-        <img src={Data.profile.coverPicture} alt="Cover Picture" className="w-full h-full object-cover" />
+        <img src={CoverPicture} alt="Cover Picture" className="w-full h-full object-cover" />
       </div>
     </div>
   );

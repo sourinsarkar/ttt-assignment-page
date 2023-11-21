@@ -3,6 +3,7 @@ import Stats from "./Stats";
 import ProfileBio from "./ProfileBio";
 import { Triangle, Check } from "iconoir-react/regular";
 import StatusIconProp from "./StatusIconProp";
+import ProfilePicture from "../../assets/images/profile-picture.png"
 
 type ProfileType = {
   name: string;
@@ -38,7 +39,7 @@ const Profile: React.FC = () => {
           <div className="flex items-end mt-[-5%] mb-8 gap-5">
             <div className="flex justify-center">
               <div className="xl:h-40 xl:w-40 xsm:h-32 xsm:w-32">
-                <img src={Data.profile.profilePicture} alt="Profile Picture" className="w-full h-full rounded-full border-2 border-[#111111]/50" />
+                <img src={ProfilePicture} alt="Profile Picture" className="w-full h-full rounded-full border-2 border-[#111111]/50" />
               </div>
             </div>
             <div className="flex items-start">
