@@ -17,8 +17,8 @@ const Data = {
 const ProfileBio: React.FC = () => {
     return (
         <div>
-            <div className="text-xl py-1"><h2>{Data.bio.about}</h2></div>
-            <div className="text-[#5cb8c3]"><a href={Data.bio.link}>{Data.bio.link}</a></div>
+            <div className="xl:text-xl xsm:text-base py-1"><h2>{Data.bio.about}</h2></div>
+            <div className="xl:text-base xsm:text-sm text-[#5cb8c3]"><a href={Data.bio.link}>{Data.bio.link}</a></div>
             <div className="flex gap-5 py-3">
 
                 {/* Worst way ----- */}

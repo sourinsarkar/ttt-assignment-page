@@ -10,11 +10,11 @@ function Wrapper() {
       <Navbar />
       <div className="max-w-screen-md m-auto">
         <ProfileCover />
-        <div className="mx-10">
+        <div className="xl:mx-10 xsm:mx-6">
           <Profile />
         </div>
         <Divider />
-        <div className="mx-10">
+        <div className="xl:mx-10 xsm:mx-5">
           <PostShowcase />
         </div>
 

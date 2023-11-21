@@ -35,11 +35,10 @@ const Profile: React.FC = () => {
     <div> 
       <div>
         <div>
-          <div className="flex items-end mt-[-5%] mb-8 gap-10">
+          <div className="flex items-end mt-[-5%] mb-8 gap-5">
             <div className="flex justify-center">
-              <div className=" h-40 rounded-full border-2 border-[#111111]/50">
-                <img src={Data.profile.profilePicture} alt="Profile Picture" className="w-full h-full rounded-inherit"
-                />
+              <div className="xl:h-40 xl:w-40 xsm:h-32 xsm:w-32">
+                <img src={Data.profile.profilePicture} alt="Profile Picture" className="w-full h-full rounded-full border-2 border-[#111111]/50" />
               </div>
             </div>
             <div className="flex items-start">
@@ -47,7 +46,7 @@ const Profile: React.FC = () => {
                 <div className="mb-3">
                   <div className="flex items-center gap-2">
                     <div>
-                      <h1 className="font-bold text-2xl">{Data.profile.name}</h1>
+                      <h1 className="font-bold xl:text-2xl">{Data.profile.name}</h1>
                     </div>
                     <div className="p-1 rounded-full bg-[#402773]">
                         <Triangle height={13} width={13} color='#ffffff' strokeWidth={4}/>
@@ -60,7 +59,7 @@ const Profile: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex justify-between gap-4">
+                <div className="flex justify-between xl:gap-4 xsm:gap-3">
                   <div className="w-full flex">
                     <Stats value={Data.profile.follower} statTopic={camelCaseFollowerKey} />
                   </div>
