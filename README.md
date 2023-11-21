@@ -6,7 +6,7 @@ This is built using `Vite` `React.js` `Typescript` `Tailwindcss`.
 
 | Deployment |
 | ---------- |
-|   Vercel: [Click to view](https://ttt-assignment-page.vercel.app)  |
+|   Vercel:  <a href="https://ttt-assignment-page.vercel.app" target="_blank">Click to view</a>  |
 
 ## Components
 
