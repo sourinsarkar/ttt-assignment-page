@@ -5,6 +5,8 @@ This project shows a profile section based on TTT's requirements.
 This is built using `Vite` `React.js` `Typescript`.
 
 The codebase consists of:-
+
+
 `4 Parent Components`: NavSection, PostSection, ProfileSection, DividerSec
 
 `1 Layout`: Wrapper.tsx
@@ -16,8 +18,6 @@ The codebase consists of:-
 ## Plugins Used
 
 `iconoir-react` is a Icon library that is used in the application.
-
-For more: [iconoir.com](https://iconoir.com)
 
 `Tailwindcss` for all styling needs.
 
