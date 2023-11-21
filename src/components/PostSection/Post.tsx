@@ -49,7 +49,7 @@ const Post: React.FC<Props> = ({
           : null}
         </h1>
       </div>
-      <div className="flex justify-between xl:text-sm xsm:text-[11px]">
+      <div className="flex justify-between xl:text-sm xsm:text-[11px] ssm:text-xs">
         <div className="text-[#5cb8c3] font-medium">
           <p>
             {postCategory} <span className="text-black">by {postAuthor}</span>
