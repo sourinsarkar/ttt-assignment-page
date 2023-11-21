@@ -47,6 +47,8 @@ Post section has one single major component that holds data such as post's headl
 
 `Wrapper.tsx` is the layout component. Since, the project has one page, the layout component is a single page application.
 
-### Icons
+### Icons and Fonts
 
 The uniformity of the icons as achieved via `BioIconProp.tsx` and `StatusIconProp.tsx`.
+
+**Inter** has been used as a font. The font files reside locally in the `./src/assets/font/Inter`.
