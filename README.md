@@ -2,7 +2,7 @@
 
 This project shows a profile section based on TTT's requirements.
 
-This is built using `Vite` `React.js` `Typescript`.
+This is built using `Vite` `React.js` `Typescript` `Tailwindcss`.
 
 The codebase consists of:-
 
@@ -21,7 +21,7 @@ The codebase consists of:-
 
 `Tailwindcss` for all styling needs.
 
-Responsive on mobiles, tablets, desktops.
+**_Responsive on_ mobiles, tablets, desktops.**
 
 ### Nav Section
 
@@ -32,8 +32,11 @@ Implementation of the navigation bar is achieved in this section. It's very inte
 Profile Section has `7` sub components each made to hold different content. At the core, this section has `3` primary sub sections to display data.
 
 `Profile.tsx`: Implements the cover picture, profile picture, user's name and other meta tags.
+
 `ProfileBio.tsx`: Implements the "About" part of the user.
+
 `ProfileBioIcons.tsx`: This component is designed with much typesafety. The icons and the values contained with then are implemented here, which are passed via props from `ProfileBio.tsx`.
+
 `Stats.tsx`: Stats is a small component to foster the data of followers and following.
 
 ### Post Section
