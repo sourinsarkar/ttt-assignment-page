@@ -28,7 +28,7 @@ const ProfileBioIcons: React.FC<Props> = ({ iconName, value, color }) => {
                     <Icon />
                 </IconProp>
             </div>
-            <div className='font-medium xl:text-base xsm:text-sm'>{value}</div>
+            <div className='font-medium xl:text-base xsm:text-sm'>{value}</div> 
         </div>
     );
 }

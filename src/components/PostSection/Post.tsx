@@ -7,6 +7,7 @@ interface Props {
   postDate: string;
   postDuration: string;
   postViews: string;
+  postCategory: string;
 }
   
 const Post: React.FC<Props> = ({
@@ -16,6 +17,7 @@ const Post: React.FC<Props> = ({
   postDate,
   postDuration,
   postViews,
+  postCategory
 }) => {
   return (
     <div className="pt-12 pb-10 border-b-2 border-black/5">
@@ -50,7 +52,7 @@ const Post: React.FC<Props> = ({
       <div className="flex justify-between xl:text-sm xsm:text-[11px]">
         <div className="text-[#5cb8c3] font-medium">
           <p>
-            thought <span className="text-black">by {postAuthor}</span>
+            {postCategory} <span className="text-black">by {postAuthor}</span>
           </p>
         </div>
         <div className="flex">
