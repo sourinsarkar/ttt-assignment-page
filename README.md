@@ -1,27 +1,42 @@
-# React + TypeScript + Vite
+# TTT Profile Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project shows a profile section based on TTT's requirements.
+This is built using `Vite` `React.js` `Typescript`.
 
-Currently, two official plugins are available:
+The codebase consists of:-
+`4 Parent Components`: NavSection, PostSection, ProfileSection, DividerSec
+`1 Layout`: Wrapper.tsx
+`1 JSON`: Data.json
+`2 Assets`: Fonts, Images
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Plugins Used
 
-## Expanding the ESLint configuration
+`iconoir-react` is a Icon library that is used in the application.
+[iconoir.com](https://iconoir.com)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Responsive on mobiles, tablets, desktops.
 
-- Configure the top-level `parserOptions` property like this:
+### Nav Section
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Implementation of the navigation bar is achieved in this section. It's very interesting to note that the web page doesn't actually have a customized navigation bar for smaller screens though works on all devices.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Profile Section
+
+Profile Section has `7` sub components each made to hold different content. At the core, this section has `3` primary sub sections to display data.
+
+`Profile.tsx`: Implements the cover picture, profile picture, user's name and other meta tags.
+`ProfileBio.tsx`: Implements the "About" part of the user.
+`ProfileBioIcons.tsx`: This component is designed with much typesafety. The icons and the values contained with then are implemented here, which are passed via props from `ProfileBio.tsx`.
+`Stats.tsx`: Stats is a small component to foster the data of followers and following.
+
+### Post Section
+
+Post section has one single major component that holds data such as post's headline, content, author, read time and the date-time of the post.
+
+### Layout
+
+`Wrapper.tsx` is the layout component. Since, the project has one page, the layout component is a single page application.
+
+### Icons
+
+The uniformity of the icons as achieved via `BioIconProp.tsx` and `StatusIconProp.tsx`.
