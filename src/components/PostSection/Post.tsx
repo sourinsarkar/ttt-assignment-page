@@ -8,7 +8,7 @@ interface Props {
   postDuration: string;
   postViews: string;
 }
-
+  
 const Post: React.FC<Props> = ({
   postAuthor,
   postHeadline,
