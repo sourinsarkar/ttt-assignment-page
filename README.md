@@ -4,8 +4,11 @@ This project shows a profile section based on TTT's requirements.
 
 This is built using `Vite` `React.js` `Typescript` `Tailwindcss`.
 
-The codebase consists of:-
+| Deployment |
+| ---------- |
+| Vercel     |
 
+## Components
 
 `4 Parent Components`: NavSection, PostSection, ProfileSection, DividerSec
 
